@@ -1,0 +1,9 @@
+.carousel-inner > .carousel-item  > img {
+    width:1440px;
+    height:684px;
+  }
+  .btn-btn{
+      background-color: white;
+      text-decoration: none;
+      padding: 10px 30px;
+  }
