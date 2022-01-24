@@ -7,13 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marriot Convention Center</title>
 
-    <!-- css stylesheet -->
+    <!-------------------- css stylesheet ------------------->
     <link rel="stylesheet" href="style.css">
 
-    <!-- fontawesome link -->
+    <!-------------------- fontawesome link ----------------->
     <script src="https://kit.fontawesome.com/bcd3e897d9.js" crossorigin="anonymous"></script>
 
-    <!-- Bootstrap css -->
+    <!-------------------- Bootstrap css --------------------->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
@@ -21,7 +21,7 @@
 <body>
 
     <header>
-        <!-- navigation -->
+        <!--------------------------------------------- navigation -------------------------------------------->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container pt-4 pb-4">
                 <h2 class="fw-bold">Marriot Convention Center</h2>
@@ -49,7 +49,7 @@
             </div>
         </nav>
 
-        <!-- Toast -->
+        <!-------------------------------------- Toast ------------------------------------------->
         <div class="toast">
             <div class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
                 <div class="toast-header">
@@ -61,7 +61,7 @@
             </div>
         </div>
 
-        <!-- carousel section -->
+        <!------------------------------------------- carousel section ---------------------------------------->
         <section>
             <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
@@ -120,16 +120,15 @@
     </header>
 
     <main>
-        <!-- package section -->
+        <!----------------------------------------- package section ----------------------------------------->
         <section class="container">
             <div class="card-container">
                 <h1 class="text-header text-center">Our Package</h1>
                 <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 pb-5">
-                    <!-- card 1 -->
+
+                    <!--------------------- card 1 ----------------------->
                     <div class="col">
-
                         <div class="card h-100 border-0 pb-4">
-
                             <div class="card-body">
                                 <div class="card-title-color">
                                     <h2 class="card-title fs-1 fw-bold pb-3">$300</h2>
@@ -156,7 +155,7 @@
                     </div>
 
 
-                    <!-- card 2 -->
+                    <!----------------------- card 2 ----------------------->
                     <div class="col">
                         <div class="card h-100 border-0 pb-4">
 
@@ -183,7 +182,7 @@
                             </div>
                         </div>
                     </div>
-                    <!-- card 3 -->
+                    <!--------------------card 3 ------------------->
                     <div class="col">
                         <div class="card h-600 border-0 pb-4">
                             <div class="card-color">
@@ -217,7 +216,7 @@
 
                     </div>
 
-                    <!-- card 4 -->
+                    <!------------------------card 4 -------------------------->
                     <div class="col">
                         <div class="card h-100 border-0 pb-4">
 
@@ -248,7 +247,7 @@
             </div>
         </section>
 
-        <!-- Accordion -->
+        <!------------------------------------- Accordion ----------------------------------------------->
         <section>
             <div class="accordion mb-5 mt-5">
                 <h1 class="text-header text-center">Frequently asked Questions</h1>
@@ -331,9 +330,85 @@
                     </div>
                 </div>
         </section>
-
     </main>
 
+
+    <!------------------------------------------ Form -------------------------------------------->
+
+    <section class="mt-5">
+        <div class="form-div mb-5 mt-5">
+            <div class="container">
+                <h1 class="text-header text-center">We Will Get Back To You</h1>
+                <form class="row g-3 needs-validation" novalidate>
+                    <div class="col-md-4">
+                        <label for="validationCustom01" class="form-label">First name</label>
+                        <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="validationCustom02" class="form-label">Last name</label>
+                        <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="validationCustomUsername" class="form-label">Username</label>
+                        <div class="input-group has-validation">
+                            <span class="input-group-text" id="inputGroupPrepend">@</span>
+                            <input type="text" class="form-control" id="validationCustomUsername"
+                                aria-describedby="inputGroupPrepend" required>
+                            <div class="invalid-feedback">
+                                Please choose a username.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="validationCustom03" class="form-label">City</label>
+                        <input type="text" class="form-control" id="validationCustom03" required>
+                        <div class="invalid-feedback">
+                            Please provide a valid city.
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <label for="validationCustom04" class="form-label">State</label>
+                        <select class="form-select" id="validationCustom04" required>
+                            <option selected disabled value="">Choose...</option>
+                            <option>...</option>
+                        </select>
+                        <div class="invalid-feedback">
+                            Please select a valid state.
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <label for="validationCustom05" class="form-label">Zip</label>
+                        <input type="text" class="form-control" id="validationCustom05" required>
+                        <div class="invalid-feedback">
+                            Please provide a valid zip.
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                            <label class="form-check-label" for="invalidCheck">
+                                Agree to terms and conditions
+                            </label>
+                            <div class="invalid-feedback">
+                                You must agree before submitting.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 text-center mb-5">
+                        <button class="btn btn-secondary text-light fw-bold" type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!----------------------------------------------- footer -------------------------------------------------->
     <footer class="bg-dark">
         <div class="container">
             <div class="flex-footer d-flex justify-content-between align-items-center">
@@ -350,9 +425,6 @@
                 </div>
             </div>
         </div>
-
-
-
     </footer>
 
 
