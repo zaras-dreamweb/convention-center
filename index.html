@@ -49,6 +49,18 @@
             </div>
         </nav>
 
+        <!-- Toast -->
+        <div class="toast">
+            <div class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header">
+                    <i class="fas fa-gift pe-3 fs-4 text-center text-primary"></i>
+                    <strong class="me-auto">20% off on next booking</strong>
+                    <small class="text-muted"></small>
+                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+            </div>
+        </div>
+
         <!-- carousel section -->
         <section>
             <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
@@ -110,82 +122,116 @@
     <main>
         <!-- package section -->
         <section class="container">
-            <h1 class="text-header text-center">Our Package</h1>
-            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 pb-5">
-                <!-- card 1 -->
-                <div class="col">
+            <div class="card-container">
+                <h1 class="text-header text-center">Our Package</h1>
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 pb-5">
+                    <!-- card 1 -->
+                    <div class="col">
 
-                    <div class="card h-100 border-0 pb-4">
+                        <div class="card h-100 border-0 pb-4">
 
-                        <div class="card-body">
-                            <div class="card-title-color">
-                                <h2 class="card-title fs-1 fw-bold pb-3">$300</h2>
-                                <h3 class="fw-bold">Business Fair</h3>
-                            </div>
-                            <p class="card-text text-secondary fs-5">For most busineses event like book fair,
-                                craft
-                                fair
-                            </p>
-                        </div>
-
-                        <div class="text-secondary fs-5 ps-3">
-                            <p><i class="fas fa-check-circle pe-2"></i>Limited space access</p>
-                            <p><i class="fas fa-check-circle pe-2"></i>Security facility</p>
-                            <p><i class="fas fa-check-circle pe-2"></i>Event support</p>
-                            <p><i class="fas fa-check-circle pe-2"></i>Decoration design</p>
-                            <p><i class="fas fa-check-circle pe-2"></i>Per day bill</p>
-
-                        </div>
-                        <div class="">
-                            <button class="btn-plan fw-bold border-0 rounded-pill ms-3">Choose Plans</button>
-                        </div>
-                    </div>
-                </div>
-                <!-- card 2 -->
-                <div class="col">
-                    <div class="card h-100 border-0 pb-4">
-
-                        <div class="card-body">
-                            <div class="card-title-color">
-                                <h2 class="card-title fs-1 fw-bold  pb-3">$500</h2>
-                                <h3 class="fw-bold">Wedding Basic</h3>
-                            </div>
-                            <p class="card-text text-secondary fs-5">For weddings with basic plan and limited
-                                items
-                            </p>
-                        </div>
-
-                        <div class="text-secondary fs-5 ps-3">
-                            <p><i class="fas fa-check-circle pe-2"></i>Full space access</p>
-                            <p><i class="fas fa-check-circle pe-2"></i>Food arrangement</p>
-                            <p><i class="fas fa-check-circle pe-2"></i>Management support</p>
-                            <p><i class="fas fa-check-circle pe-2"></i>Decoration design</p>
-                            <p><i class="fas fa-check-circle pe-2"></i>Billed as shift</p>
-
-                        </div>
-                        <div class="">
-                            <button class="btn-plan fw-bold border-0 rounded-pill ms-3">Choose Plans</button>
-                        </div>
-                    </div>
-                </div>
-                <!-- card 3 -->
-                <div class="col">
-                    <div class="card h-600 border-0 pb-4">
-                        <div class="card-color">
                             <div class="card-body">
                                 <div class="card-title-color">
-                                    <span
-                                        class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">HOT</span>
-                                    <h2 class="card-title fs-1 fw-bold text-light pb-3">$800</h2>
-                                    <h3 class="fw-bold text-light">Wedding Plus</h3>
+                                    <h2 class="card-title fs-1 fw-bold pb-3">$300</h2>
+                                    <h3 class="fw-bold">Business Fair</h3>
                                 </div>
-                                <p class="card-text text-secondary fs-5 text-light">For most weddings with
-                                    premium
-                                    plans
+                                <p class="card-text text-secondary fs-5">For most busineses event like book fair,
+                                    craft
+                                    fair
                                 </p>
                             </div>
 
-                            <div class="text-secondary fs-5 ps-3 text-light">
+                            <div class="text-secondary fs-5 ps-3">
+                                <p><i class="fas fa-check-circle pe-2"></i>Limited space access</p>
+                                <p><i class="fas fa-check-circle pe-2"></i>Security facility</p>
+                                <p><i class="fas fa-check-circle pe-2"></i>Event support</p>
+                                <p><i class="fas fa-check-circle pe-2"></i>Decoration design</p>
+                                <p><i class="fas fa-check-circle pe-2"></i>Per day bill</p>
+
+                            </div>
+                            <div class="">
+                                <button class="btn-plan fw-bold border-0 rounded-pill ms-3">Choose Plans</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- card 2 -->
+                    <div class="col">
+                        <div class="card h-100 border-0 pb-4">
+
+                            <div class="card-body">
+                                <div class="card-title-color">
+                                    <h2 class="card-title fs-1 fw-bold  pb-3">$500</h2>
+                                    <h3 class="fw-bold">Wedding Basic</h3>
+                                </div>
+                                <p class="card-text text-secondary fs-5">For weddings with basic plan and limited
+                                    items
+                                </p>
+                            </div>
+
+                            <div class="text-secondary fs-5 ps-3">
+                                <p><i class="fas fa-check-circle pe-2"></i>Full space access</p>
+                                <p><i class="fas fa-check-circle pe-2"></i>Food arrangement</p>
+                                <p><i class="fas fa-check-circle pe-2"></i>Management support</p>
+                                <p><i class="fas fa-check-circle pe-2"></i>Decoration design</p>
+                                <p><i class="fas fa-check-circle pe-2"></i>Billed as shift</p>
+
+                            </div>
+                            <div class="">
+                                <button class="btn-plan fw-bold border-0 rounded-pill ms-3">Choose Plans</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card 3 -->
+                    <div class="col">
+                        <div class="card h-600 border-0 pb-4">
+                            <div class="card-color">
+                                <div class="card-body">
+                                    <div class="card-title-color">
+                                        <span
+                                            class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">HOT</span>
+                                        <h2 class="card-title fs-1 fw-bold text-light pb-3">$800</h2>
+                                        <h3 class="fw-bold text-light">Wedding Plus</h3>
+                                    </div>
+                                    <p class="card-text text-secondary fs-5 text-light">For most weddings with
+                                        premium
+                                        plans
+                                    </p>
+                                </div>
+
+                                <div class="text-secondary fs-5 ps-3 text-light">
+                                    <p><i class="fas fa-check-circle pe-2"></i>Full space access</p>
+                                    <p><i class="fas fa-check-circle pe-2"></i>Dedicated team</p>
+                                    <p><i class="fas fa-check-circle pe-2"></i>Buffet food</p>
+                                    <p><i class="fas fa-check-circle pe-2"></i>Premium decoration</p>
+                                    <p><i class="fas fa-check-circle pe-2"></i>Pay as plan</p>
+
+                                </div>
+                                <div class="">
+                                    <button class="btn-plan fw-bold border-0 rounded-pill ms-3">Choose
+                                        Plans</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- card 4 -->
+                    <div class="col">
+                        <div class="card h-100 border-0 pb-4">
+
+                            <div class="card-body">
+                                <div class="card-title-color">
+                                    <h2 class="card-title fs-1 fw-bold pb-3">$1200</h2>
+                                    <h3 class="fw-bold">Corporate Event</h3>
+                                </div>
+                                <p class="card-text text-secondary fs-5">For most corporate busineses events
+
+                                </p>
+                            </div>
+
+                            <div class="text-secondary fs-5 ps-3">
                                 <p><i class="fas fa-check-circle pe-2"></i>Full space access</p>
                                 <p><i class="fas fa-check-circle pe-2"></i>Dedicated team</p>
                                 <p><i class="fas fa-check-circle pe-2"></i>Buffet food</p>
@@ -194,42 +240,13 @@
 
                             </div>
                             <div class="">
-                                <button class="btn-plan fw-bold border-0 rounded-pill ms-3">Choose
-                                    Plans</button>
+                                <button class="btn-plan fw-bold border-0 rounded-pill ms-3">Choose Plans</button>
                             </div>
-                        </div>
-                    </div>
-
-                </div>
-
-                <!-- card 4 -->
-                <div class="col">
-                    <div class="card h-100 border-0 pb-4">
-
-                        <div class="card-body">
-                            <div class="card-title-color">
-                                <h2 class="card-title fs-1 fw-bold pb-3">$1200</h2>
-                                <h3 class="fw-bold">Corporate Event</h3>
-                            </div>
-                            <p class="card-text text-secondary fs-5">For most corporate busineses events
-
-                            </p>
-                        </div>
-
-                        <div class="text-secondary fs-5 ps-3">
-                            <p><i class="fas fa-check-circle pe-2"></i>Full space access</p>
-                            <p><i class="fas fa-check-circle pe-2"></i>Dedicated team</p>
-                            <p><i class="fas fa-check-circle pe-2"></i>Buffet food</p>
-                            <p><i class="fas fa-check-circle pe-2"></i>Premium decoration</p>
-                            <p><i class="fas fa-check-circle pe-2"></i>Pay as plan</p>
-
-                        </div>
-                        <div class="">
-                            <button class="btn-plan fw-bold border-0 rounded-pill ms-3">Choose Plans</button>
                         </div>
                     </div>
                 </div>
             </div>
+
 
         </section>
 
@@ -239,6 +256,15 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
+
+    <!-- toast script -->
+    <script>
+        window.onload = (e) => {
+            let myToast = document.querySelector('.toast');
+            let bsToast = new bootstrap.Toast(myToast);
+            bsToast.show();
+        }
+    </script>
 </body>
 
 </html>
