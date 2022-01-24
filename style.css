@@ -7,3 +7,22 @@
       text-decoration: none;
       padding: 10px 30px;
   }
+  .btn-plan{
+      background-color: #f3e9ef;
+      color: #3F87F5;
+      text-align: center;
+      padding: 15px 80px;  
+  }
+
+.card-title-color{
+    color: #231D4F;
+}
+.card-color{
+    background-color: #3F87F5;
+    border-radius: 20px;
+    box-shadow: 0px 0px 30px  #3F87F5;
+}
+.col-3{
+    height: 300px;
+}
+
